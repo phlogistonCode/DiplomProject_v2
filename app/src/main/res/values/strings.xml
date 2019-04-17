@@ -1,0 +1,30 @@
+<resources>
+
+    <string name="appName">Stepper drive app</string>
+    <string name="appNameVersion">Stepper drive app</string>
+    <string name="menuSettings">Settings</string>
+
+    <string name="strBtnOn">On</string>
+    <string name="strBtnOff">Off</string>
+
+    <string name="titleActivityMain">Stepper drive app</string>
+    <string name="titleActivityButtons">App - Control engine</string>
+    <string name="titleActivityAbout">App - About</string>
+
+    <string name="btnButton">Button control</string>
+    <string name="btnGauges">Button gauges</string>
+    <string name="btnAbout">About</string>
+
+    <string name="textControl">Engine control functions</string>
+    <string name="textSpeed">Control speed</string>
+
+    <string name="textAbout">Application for managing devices via Bluetooth wireless technology on the Arduino boards.\n\nDeveloped by: Popov A.\nVSTU, 2017.</string>
+
+    <string name="defaultMAC" translatable="false">98:D3:31:FC:46:4F</string>
+    <string name="defaultAlterCommand1" translatable="false">S</string>
+    <string name="defaultAlterCommand2" translatable="false">B</string>
+    <string name="defaultAlterCommand3" translatable="false">C</string>
+    <string name="defaultCommand1" translatable="false">1</string>
+    <string name="defaultCommand2" translatable="false">0</string>
+
+</resources>

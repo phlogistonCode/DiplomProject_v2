@@ -1,0 +1,22 @@
+<resources>
+    <string name="appName">Приложение для управления шаговым приводом</string>
+    <string name="appNameVersion">Приложение для управления шаговым приводом</string>
+    <string name="menuSettings">Настройки</string>
+
+    <string name="strBtnOn">Включить</string>
+    <string name="strBtnOff">Выключить</string>
+
+    <string name="titleActivityMain">Приложение для управления шаговым приводом</string>
+    <string name="titleActivityButtons">Приложение - Управление двигателем</string>
+    <string name="titleActivityAbout">Приложение - О приложении</string>
+       
+    <string name="btnButton">Перейти к управлению</string>
+    <string name="btnGauges">Перейти к датчикам</string>
+    <string name="btnAbout">О приложении</string>
+    
+    <string name="textControl">Функции управления двигателем</string>
+    <string name="textSpeed">Управление скоростью</string>
+
+    <string name="textAbout">Приложение для управления устройствами посредством беспроводной технологии "Bluetooth" на платах ардуино.\n\nРазработал: Попов А.\nВолгГТУ, 2017.</string>
+	
+</resources>

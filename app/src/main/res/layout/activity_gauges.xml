@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityGauges">
+
+    <com.github.anastr.speedviewlib.SpeedView
+        android:id="@+id/speedView"
+        app:sv_unit="C'"
+        app:sv_mediumSpeedPercent="50"
+        app:sv_lowSpeedPercent="25"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TableRow
+            android:layout_weight="1" >
+                <com.phlogiston.gauges.ArcGauge
+                    android:id="@+id/arcGauge1"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <com.phlogiston.gauges.ArcGauge
+                    android:id="@+id/arcGauge2"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <com.phlogiston.gauges.ArcGauge
+                    android:id="@+id/arcGauge3"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="0" >
+            <SeekBar
+                android:id="@+id/seekBarArcGauge1"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progress="0"
+                android:max="200" />
+            <SeekBar
+                android:id="@+id/seekBarArcGauge2"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progress="0"
+                android:max="200" />
+            <SeekBar
+                android:id="@+id/seekBarArcGauge3"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progress="0"
+                android:max="200" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1" >
+                <com.phlogiston.gauges.ArcGauge
+                    android:id="@+id/arcGauge4"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <com.phlogiston.gauges.ArcGauge
+                    android:id="@+id/arcGauge5"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="0" >
+            <SeekBar
+                android:id="@+id/seekBarArcGauge4"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progress="0"
+                android:max="200" />
+            <SeekBar
+                android:id="@+id/seekBarArcGauge5"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progress="0"
+                android:max="200" />
+        </TableRow>
+
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+            
+	<PreferenceCategory
+ 		android:key="pref_General"
+ 		android:title="General settings"
+ 		android:summary="General settings">
+	
+		<EditTextPreference
+			 android:key="pref_MAC_address"
+			 android:title="MAC address"
+			 android:summary="MAC-address of Bluetooth module"
+			 android:defaultValue="@string/defaultMAC" />
+
+		<EditTextPreference
+			android:key="pref_command_1"
+			android:title="General command 1"
+			android:summary="General command symbol to send №1, on left button"
+			android:defaultValue="@string/defaultCommand1" />
+
+		<EditTextPreference
+			android:key="pref_command_2"
+			android:title="General command 2"
+			android:summary="General command symbol to send №2, on right button"
+			android:defaultValue="@string/defaultCommand2" />
+		
+		<CheckBoxPreference
+			android:key="pref_Debug"
+			android:title="Debug info"
+			android:summary="Show debug information"
+			android:defaultValue="false" />
+		
+	</PreferenceCategory>
+	
+	
+	<PreferenceCategory
+ 		android:key="pref_Buttons"
+ 		android:title="Additional buttons control settings"
+ 		android:summary="Additional buttons control settings">
+
+		<EditTextPreference
+			android:key="pref_alter_command_1"
+			android:title="Additional command 1"
+			android:summary="Additional command symbol to send №1"
+			android:defaultValue="@string/defaultAlterCommand1" />
+
+		<EditTextPreference
+			android:key="pref_alter_command_2"
+			android:title="Additional command 2"
+			android:summary="Additional command symbol to send №2"
+			android:defaultValue="@string/defaultAlterCommand2" />
+
+		<EditTextPreference
+			android:key="pref_alter_command_3"
+			android:title="Additional command 3"
+			android:summary="Additional command symbol to send №2"
+			android:defaultValue="@string/defaultAlterCommand3" />
+		
+	</PreferenceCategory>
+
+</PreferenceScreen>

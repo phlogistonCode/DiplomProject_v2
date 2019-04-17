@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.phlogiston"
+    android:versionCode="9"
+    android:versionName="2.9">
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/appName"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ActivityGauges"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/titleActivityMain"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SetPreferenceActivity"
+            android:label="@string/titleActivityMain"></activity>
+        <activity
+            android:name=".ActivityButtons"
+            android:label="@string/titleActivityButtons"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".ActivityAbout"
+            android:label="@string/titleActivityAbout"></activity>
+    </application>
+
+</manifest>

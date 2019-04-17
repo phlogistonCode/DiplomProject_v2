@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+            
+	<PreferenceCategory
+ 		android:key="pref_General"
+ 		android:title="Главные настройки"
+ 		android:summary="Главные настройки">
+	
+		<EditTextPreference
+			 android:key="pref_MAC_address"
+			 android:title="MAC адрес"
+			 android:summary="MAC-адрес Bluetooth устройства"
+			 android:defaultValue="@string/defaultMAC" />
+
+		<EditTextPreference
+			android:key="pref_command_1"
+			android:title="Основная комманда 1"
+			android:summary="Основной символ комманды для отправки №1, на левой кнопке"
+			android:defaultValue="@string/defaultCommand1" />
+
+		<EditTextPreference
+			android:key="pref_command_2"
+			android:title="Основная комманда 2"
+			android:summary="Основной символ комманды для отправки №2, на правой кнопке"
+			android:defaultValue="@string/defaultCommand2" />
+		
+		<CheckBoxPreference
+			android:key="pref_Debug"
+			android:title="Отладочная информация"
+			android:summary="Отображение отладочной информации"
+			android:defaultValue="false" />
+		
+	</PreferenceCategory>
+	
+	
+	<PreferenceCategory
+ 		android:key="pref_Buttons"
+ 		android:title="Дополнительные параметры для управления"
+ 		android:summary="Параметры для управления от экранных кнопок">
+
+		<EditTextPreference
+			android:key="pref_alter_command_1"
+			android:title="Дополнительная команда 1"
+			android:summary="Дополнительный символ команды для отправки №1"
+			android:defaultValue="@string/defaultAlterCommand1" />
+
+		<EditTextPreference
+			android:key="pref_alter_command_2"
+			android:title="Дополнительная команда 2"
+			android:summary="Дополнительный символ команды для отправки №2"
+			android:defaultValue="@string/defaultAlterCommand2" />
+
+		<EditTextPreference
+			android:key="pref_alter_command_3"
+			android:title="Дополнительная команда 3"
+			android:summary="Дополнительный символ команды для отправки №3"
+			android:defaultValue="@string/defaultAlterCommand3" />
+		
+	</PreferenceCategory>
+
+</PreferenceScreen>
