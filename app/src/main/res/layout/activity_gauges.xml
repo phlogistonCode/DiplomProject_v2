@@ -28,14 +28,15 @@
                     android:id="@+id/arcGauge1"
                     android:layout_weight="1"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+                    android:layout_height="match_parent"
+                    />
                 <com.phlogiston.gauges.ArcGauge
                     android:id="@+id/arcGauge2"
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
-                <com.phlogiston.gauges.ArcGauge
-                    android:id="@+id/arcGauge3"
+                <com.phlogiston.gauges.HalfGauge
+                    android:id="@+id/halfGauge3"
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
@@ -49,7 +50,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:progress="0"
-                android:max="200" />
+                android:max="100" />
             <SeekBar
                 android:id="@+id/seekBarArcGauge2"
                 android:layout_weight="1"
@@ -58,12 +59,12 @@
                 android:progress="0"
                 android:max="200" />
             <SeekBar
-                android:id="@+id/seekBarArcGauge3"
+                android:id="@+id/seekBarHalfGauge3"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:progress="0"
-                android:max="200" />
+                android:max="100" />
         </TableRow>
 
         <TableRow
